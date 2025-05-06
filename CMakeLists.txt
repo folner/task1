@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.24)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED On)
+project(task)
+file(GLOB SOURCE_H source/*.h)
+file(GLOB SOURCE_CPP source/*.cpp)
+add_executable(${PROJECT_NAME} ${SOURCE_H} ${SOURCE_CPP})
